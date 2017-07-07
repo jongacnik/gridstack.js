@@ -17,7 +17,7 @@
         try { jQuery = require('jquery'); } catch (e) {}
         try { _ = require('lodash'); } catch (e) {}
         try { GridStackUI = require('gridstack'); } catch (e) {}
-        factory(jQuery, _, GridStackUI);
+        module.exports = factory(jQuery, _, GridStackUI);
     } else {
         factory(jQuery, _, GridStackUI);
     }
